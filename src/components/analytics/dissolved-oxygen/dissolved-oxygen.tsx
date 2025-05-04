@@ -27,8 +27,8 @@ export const DissolvedOxygen: React.FC<Props> = ({ data, isLoading, error }) => 
 
   const isNormal = dissolvedVal >= 6 && dissolvedVal <= 9
 
-  const createdAt = data?.created_at ? (
-    <Moment format="YYYY-MM-DD h:mm a">{data.created_at}</Moment>
+  const createdAt = data?.timestamp ? (
+    <Moment format="YYYY-MM-DD h:mm a">{data.timestamp}</Moment>
   ) : (
     <span>No timestamp available</span>
   );

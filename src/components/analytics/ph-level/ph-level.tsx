@@ -30,8 +30,8 @@ export const PHLevel: React.FC<Props> = ({
 
   const isNormal = pHLevel >= 6.5 && pHLevel <= 8.5
 
-  const createdAt = data?.created_at ? (
-    <Moment format="YYYY-MM-DD h:mm a">{data.created_at}</Moment>
+  const createdAt = data?.timestamp ? (
+    <Moment format="YYYY-MM-DD h:mm a">{data.timestamp}</Moment>
   ) : (
     <span>No timestamp available</span>
   );
